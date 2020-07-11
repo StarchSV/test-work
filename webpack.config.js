@@ -1,6 +1,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -18,6 +19,11 @@ module.exports = {
       favicon: path.resolve(__dirname, './content/favicon.ico'),
     }),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, './content/imgs'), to: path.resolve(__dirname, './dist/content/imgs') },
+      ],
+    })
   ],
   module: {
     rules: [
@@ -42,11 +48,10 @@ module.exports = {
       {
         test: /\.(png|jpe?g|svg|gif)$/i,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
       },
     ],
   },
