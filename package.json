@@ -4,9 +4,9 @@
   "description": "test-work",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot --open ",
+    "dev": "webpack-dev-server --mode development --hot --open ",
     "build": "webpack",
-    "server": "node server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "js",
