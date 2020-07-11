@@ -12,3 +12,7 @@ The page will reload if you make edits.<br />
 ### `npm run build`
 
 Builds the app for production to the `dist` folder.<br />
+
+### `npm run server`
+
+Do it to run the app after the build.<br />
