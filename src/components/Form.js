@@ -1,7 +1,7 @@
 import React from 'react';
 import {Input} from "../Input";
 
-export const Form = ({formState}) => {
+export const Form = ({ formState }) => {
 
   const {main, additional} = formState.field_groups
 
@@ -17,7 +17,7 @@ export const Form = ({formState}) => {
           <div className={`row ${main}`}>
             { formState.fields.filter(item => item.group === 'main').map((item, index) => {
               return (
-                <Input item={item} index={index} containerClassName='col-md-6' key={index}/>
+                <Input item={item} containerClassName='col-md-6' key={index}/>
               )
             })}
           </div>
@@ -32,7 +32,7 @@ export const Form = ({formState}) => {
         <div>
           { formState.fields.filter(item => item.group !== 'additional' && item.group !== 'main').map((item, index) => {
             return (
-              <Input item={item} index={index} key={index}/>
+              <Input item={item} key={index}/>
             )
           })}
         </div>

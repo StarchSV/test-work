@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const Input = ({item, index, containerClassName}) => {
+export const Input = ({ item, containerClassName = '' }) => {
   return (
     item.type === 'textarea'
       ?
-        <div className={`form-group ${containerClassName ? containerClassName : null}`}>
+        <div className={`form-group ${containerClassName}`}>
           <label htmlFor={item.name}>{item.required ? item.label : `${item.label} (не обязательно)`}</label>
           <textarea
             id={item.name}
@@ -21,7 +21,7 @@ export const Input = ({item, index, containerClassName}) => {
           </div>
         </div>
       :
-        <div className={`form-group ${containerClassName ? containerClassName : null}`}>
+        <div className={`form-group ${containerClassName}`}>
           <label htmlFor={item.name}>{item.required ? item.label : `${item.label} (не обязательно)`}</label>
           <input
             type={item.type}
