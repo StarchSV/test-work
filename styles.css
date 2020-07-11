@@ -1,0 +1,222 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Общие стили*/
+
+* {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #323232;
+}
+
+p {
+    color: #000000;
+}
+
+a, a:hover {
+    color: #479C3F;
+    cursor: url("./content/buttons/cursor.png"), auto;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*    */
+
+
+/* Заголовок */
+
+.header {
+    color: #323232;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*   */
+
+/* Галерея */
+
+.gallery__container li {
+   padding-bottom: 8.1% !important;
+}
+
+.gallery__title {
+    font-size: 5vmin;
+    font-style: normal;
+    font-weight: 600;
+    color: #323232;
+}
+
+.gallery__image__container {
+    width: 95%;
+}
+
+.gallery__image {
+    padding: 35%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.gallery__dots {
+    margin: 0 auto;
+    border-color: transparent;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    background: gray;
+}
+
+.gallery__dots:hover {
+    cursor: url("./content/buttons/cursor.png"), auto;
+    outline: none;
+}
+
+.gallery__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__dots:not(:last-child) {
+    margin-right: 24px;
+}
+
+.carousel__dot--selected {
+    background: linear-gradient(91.83deg, #93E08C -1.93%, #78CEBF 97.03%);
+}
+
+.gallery__buttons {
+    border: 0;
+    background-color: white;
+}
+
+.gallery__buttons:hover {
+    cursor: url("./content/buttons/cursor.png"), auto;
+}
+
+.gallery__buttons:hover, .gallery__buttons:focus {
+    outline: none;
+}
+
+.gallery__button-left {
+    width: 32px;
+    height: 32px;
+    background-image: url("./content/buttons/left-gray-arrow.png");
+}
+
+.gallery__button-left:hover {
+    background-image: url("./content/buttons/left-gradient-arrow.png");
+}
+
+.gallery__button-right {
+    width: 32px;
+    height: 32px;
+    background-image: url("./content/buttons/right-gray-arrow.png");
+}
+
+.gallery__button-right:hover {
+    background-image: url("./content/buttons/right-gradient-arrow.png");
+}
+
+/*      */
+
+
+/* Текст */
+
+.grid__content p {
+    line-height: 160%
+}
+
+/*      */
+
+
+/* Форма */
+
+.form-control {
+    border-color: #c9c9c9;
+}
+
+.form-control:focus {
+    border-image-source: linear-gradient(92.28deg, #93E08C -1.93%, #78CEBF 97.03%);
+    border-image-slice: 1;
+    box-shadow: none;
+}
+
+.form-control::after {
+    border-radius: 1px;
+}
+
+.form__checkbox {
+    margin-left: 16px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: white!important;
+    border-color: #C9C9C9;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-control-label::after, .custom-control-label::before{
+    cursor: url("./content/buttons/cursor.png"), auto;
+    top: 0;
+}
+
+.custom-control-label {
+    margin-left: 2px;
+    padding-left: 11px;
+}
+
+.custom-checkbox .custom-control-input ~ .custom-control-label::before {
+    width: 20px;
+    height: 20px;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+    border-color: #C9C9C9;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url('./content/buttons/check.png');
+    background-position: 35% 30%;
+    outline: none;
+    width: 25px;
+    height: 25px;
+}
+
+
+.form__submit-button {
+    padding: 12px 24px;
+    background: linear-gradient(98.3deg, #93E08C -1.93%, #78CEBF 97.03%);
+    border-radius: 3px;
+    border: none;
+}
+
+.form__submit-button:hover {
+    cursor: url("./content/buttons/cursor.png"), auto;
+    background: linear-gradient(20deg, #93E08C -1.93%, #78CEBF 90%)
+}
+
+/*      */
+
+
+/*  Подвал */
+
+.footer {
+    height: 8rem;
+    background: #323232;
+}
+
+/*      */
+
