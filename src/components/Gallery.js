@@ -67,7 +67,7 @@ export const Gallery = ({galleryState}) => {
           <div className='gallery__dots__container'>
             <Dot className='gallery__dots' slide={0}/>
             <Dot className='gallery__dots' slide={3}/>
-            <Dot className='gallery__dots' slide={imgs.length}/>
+            <Dot className='gallery__dots' slide={6}/>
           </div>
           <ButtonNext className='gallery__buttons'>
             <div className="gallery__button-right"/>

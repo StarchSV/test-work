@@ -107,6 +107,7 @@ button:focus {
 
 .gallery__button-left:hover {
     background-image: url("./content/buttons/left-gradient-arrow.png");
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .gallery__button-right {
@@ -117,6 +118,7 @@ button:focus {
 
 .gallery__button-right:hover {
     background-image: url("./content/buttons/right-gradient-arrow.png");
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 /*      */
@@ -135,6 +137,7 @@ button:focus {
 
 .form-control {
     border-color: #c9c9c9;
+    height: calc(3em + .75rem + 2px);
 }
 
 .form-control:focus {
